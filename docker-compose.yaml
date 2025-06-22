@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  jupyter:
+    build: .
+    container_name: data-analitics
+    ports:
+      - "8888:8888"
+    environment:
+      - TZ=Asia/Tokyo
+    volumes:
+      # ▷ Notebook やデータを永続化
+      - ./notebooks:/home/jovyan/work
+      # ▷ プロジェクト全体をマウントしてホットリロード
+      - .:/app
