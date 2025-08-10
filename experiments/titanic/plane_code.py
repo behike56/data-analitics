@@ -8,9 +8,9 @@ import numpy as np
 # ### ［手順5］データを読み込む
 # #### Anaconda（Windows）、macOSの場合
 # リスト3.2　データの読み込み
-train_df = pd.read_csv("./data/train.csv")
-test_df = pd.read_csv("./data/test.csv")
-submission = pd.read_csv("./data/gender_submission.csv")
+train_df: pd.DataFrame = pd.read_csv("./data/train.csv")
+test_df: pd.DataFrame = pd.read_csv("./data/test.csv")
+submission: pd.DataFrame = pd.read_csv("./data/gender_submission.csv")
 # リスト3.3　train.csvのデータの概要を表示
 train_df
 # リスト3.4　test.csvのデータの概要を表示
