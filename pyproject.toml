@@ -2,9 +2,7 @@
 name = "data-analitics"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "behike56",email = "engineering@lambda-publishing.dev"}
-]
+authors = [{ name = "behike56", email = "engineering@lambda-publishing.dev" }]
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -15,17 +13,17 @@ dependencies = [
     "six (>=1.17.0,<2.0.0)",
     "mplfinance (>=0.12.10b0,<0.13.0)",
     "pandas-datareader (>=0.10.0,<0.11.0)",
-    "standard-distutils (>=3.11.9,<4.0.0)"
+    "standard-distutils (>=3.11.9,<4.0.0)",
     "matplotlib (>=3.10.3,<4.0.0)",
     "seaborn (>=0.13.2,<0.14.0)",
     "scikit-learn (>=1.7.1,<2.0.0)",
     "lightgbm (>=4.6.0,<5.0.0)",
     "optuna (>=4.4.0,<5.0.0)",
-    "xgboost (>=3.0.4,<4.0.0)"
+    "xgboost (>=3.0.4,<4.0.0)",
 ]
 
 [tool.poetry]
-packages = [{include = "data_analitics", from = "src"}]
+packages = [{ include = "data_analitics", from = "src" }]
 
 
 [tool.poetry.group.dev.dependencies]
